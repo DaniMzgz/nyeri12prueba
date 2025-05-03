@@ -10,32 +10,115 @@
       font-family: Arial, sans-serif;
       padding: 40px;
     }
-
-    .logo {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      width: 80px;
-      cursor: pointer;
-      z-index: 1000;
-      transition: transform 0.3s ease;
-    }
-
-    .logo:hover {
-      transform: scale(1.2);
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secciones - Nyeri 12</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f9f9f9;
+      margin: 0;
     }
 
     h1 {
-      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.1);
+    }
+
+    .card .nombre {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .card .edad {
+      color: #666;
+      font-size: 14px;
+    }
+
+    a.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    a.logo img {
+      width: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    a.logo img:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
-  <a href="index.html">
-    <img src="assets/fotos/LOGOsc.jpg" alt="Logo" class="logo">
+
+  <!-- Logo con enlace al inicio -->
+  <a href="index.html" class="logo">
+    <img src="assets/fotos/LOGOsc_sinbg.png" alt="Logo">
   </a>
 
-  <h1>Secciones</h1>
-  <p>En nuestro grupo Scout tenemos varias secciones en las que puedes entrar dependiendo de tu edad.</p>
+  <h1>Nuestras Secciones</h1>
+
+  <div class="grid">
+    <div class="card">
+      <img src="assets/secciones/F1.jpg" alt="Castores">
+      <div class="nombre">CASTORES</div>
+      <div class="edad">DE 6 A 8 AÑOS</div>
+    </div>
+    <div class="card">
+      <img src="assets/secciones/F2.jpg" alt="Lobatos">
+      <div class="nombre">LOBATOS</div>
+      <div class="edad">DE 9 A 10 AÑOS</div>
+    </div>
+    <div class="card">
+      <img src="assets/secciones/F3.jpg" alt="Tropa">
+      <div class="nombre">TROPA</div>
+      <div class="edad">DE 11 A 13 AÑOS</div>
+    </div>
+    <div class="card">
+      <img src="assets/secciones/F4.jpg" alt="Pioneros">
+      <div class="nombre">PIONEROS</div>
+      <div class="edad">DE 14 A 16 AÑOS</div>
+    </div>
+    <div class="card">
+      <img src="assets/secciones/F5.jpg" alt="Compañeros">
+      <div class="nombre">COMPAÑEROS</div>
+      <div class="edad">DE 17 A 20 AÑOS</div>
+    </div>
+  </div>
+
 </body>
 </html>
