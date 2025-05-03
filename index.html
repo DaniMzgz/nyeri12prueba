@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nyeri 12</title>
+  
   <style>
     * {
       margin: 0;
@@ -19,10 +22,24 @@
       font-family: Arial, sans-serif;
     }
 
+    /* Estilo para el logo en la esquina superior izquierda */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 50px; /* Tamaño inicial del logo */
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.2); /* Aumenta el tamaño al pasar el ratón */
+    }
+
     .hero {
       position: relative;
       height: 100vh;
-      background-image: url('assets/fotos/pruebapagsc.jpg'); 
+      background-image: url('assets/fotos/pruebapagsc.jpg'); /* Tu imagen */
       background-size: cover;
       background-position: center;
       display: flex;
@@ -55,6 +72,11 @@
   </style>
 </head>
 <body>
+
+  <!-- Logo que lleva al inicio -->
+  <a href="#">
+    <img src="https://via.placeholder.com/50" alt="Logo" class="logo"> <!-- Cambia esta URL por tu logo -->
+  </a>
 
   <div class="hero">
     <h1>Grupo Scout Nyeri 12</h1>
