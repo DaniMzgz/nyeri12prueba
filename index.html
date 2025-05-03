@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mi Web</title>
-  </head>
-  <body>
-    <h1>Hola mundo</h1>
-    <p>Mi primera página con GitHub Pages</p>
-  </body>
-</html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyeri 12</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background-image: url('pruebapagsc.jpg'); /* Cambia esta URL por tu imagen */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1.2s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .content {
+      padding: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Mi Página Increíble</h1>
+  </div>
+
+  <div class="content">
+    <p>Aquí empieza el contenido al hacer scroll. La imagen de arriba desaparece al bajar.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.</p>
+    <p>Más contenido para hacer scroll...</p>
+    <p style="height: 1000px;"></p>
+  </div>
+
+</body>
+</html>
