@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Secciones - Nyeri 12</title>
   <link rel="stylesheet" href="styles.css" />
-
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -21,6 +20,11 @@
       height: auto;
       cursor: pointer;
       z-index: 100;
+    }
+
+    .logo:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
     }
 
     .navbar {
@@ -64,6 +68,13 @@
       border-radius: 10px;
     }
 
+    .sections-header {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
     .sections-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -72,22 +83,40 @@
       text-align: center;
     }
 
+    .section-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .section-card img {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 10px;
+      transition: transform 0.3s ease;
     }
 
-    .section-card h3 {
-      margin: 10px 0 5px;
+    .section-card img:hover {
+      transform: scale(1.2);
+    }
+
+    .section-title {
       font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
 
     .section-card p {
       font-size: 14px;
       color: #555;
+      margin: 0;
     }
 
     @media (max-width: 600px) {
@@ -121,31 +150,46 @@
     <h1>Secciones</h1>
   </div>
 
-  <!-- Contenido de Secciones -->
+  <!-- Texto superior -->
+  <div class="sections-header">
+    Estas son las diferentes secciones del Grupo Scout Nyeri 12
+  </div>
+
+  <!-- Bloque de secciones -->
   <div class="sections-grid">
     <div class="section-card">
-      <img src="assets/fotos/castores.jpg" alt="Castores" />
-      <h3>CASTORES</h3>
+      <a href="castores.html">
+        <img src="assets/fotos/F1.png" alt="Castores">
+        <div class="section-title">CASTORES</div>
+      </a>
       <p>DE 6 A 8 AÑOS</p>
     </div>
     <div class="section-card">
-      <img src="assets/fotos/lobatos.jpg" alt="Lobatos" />
-      <h3>LOBATOS</h3>
+      <a href="lobatos.html">
+        <img src="assets/fotos/F2.png" alt="Lobatos">
+        <div class="section-title">LOBATOS</div>
+      </a>
       <p>DE 9 A 10 AÑOS</p>
     </div>
     <div class="section-card">
-      <img src="assets/fotos/tropa.jpg" alt="Tropa" />
-      <h3>TROPA</h3>
+      <a href="tropa.html">
+        <img src="assets/fotos/F3.png" alt="Tropa">
+        <div class="section-title">TROPA</div>
+      </a>
       <p>DE 11 A 13 AÑOS</p>
     </div>
     <div class="section-card">
-      <img src="assets/fotos/pioneros.jpg" alt="Pioneros" />
-      <h3>PIONEROS</h3>
+      <a href="pioneros.html">
+        <img src="assets/fotos/F4.png" alt="Pioneros">
+        <div class="section-title">PIONEROS</div>
+      </a>
       <p>DE 14 A 16 AÑOS</p>
     </div>
     <div class="section-card">
-      <img src="assets/fotos/compañeros.jpg" alt="Compañeros" />
-      <h3>COMPAÑEROS</h3>
+      <a href="companeros.html">
+        <img src="assets/fotos/F5.png" alt="Compañeros">
+        <div class="section-title">COMPAÑEROS</div>
+      </a>
       <p>DE 17 A 20 AÑOS</p>
     </div>
   </div>
