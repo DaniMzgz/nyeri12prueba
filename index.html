@@ -20,9 +20,9 @@
 
     body {
       font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
     }
 
-    /* Logo fijo en la esquina superior izquierda */
     .logo {
       position: fixed;
       top: 20px;
@@ -35,6 +35,40 @@
 
     .logo:hover {
       transform: scale(1.2);
+    }
+
+    .navbar {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .navbar li {
+      display: inline;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #ffd700;
+      color: black;
     }
 
     .hero {
@@ -68,97 +102,67 @@
     }
 
     .content {
-      padding: 40px;
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .content p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo como botón al inicio -->
-  <a href="#">
+  <!-- Logo -->
+  <a href="index.html">
     <img src="assets/fotos/LOGOsc.jpg" alt="Logo" class="logo">
   </a>
 
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+      <li><a href="secciones.html">SECCIONES</a></li>
+      <li><a href="noticias.html">NOTICIAS</a></li>
+      <li><a href="contacto.html">CONTACTO</a></li>
+      <li><a href="fotos.html">FOTOS</a></li>
+      <li><a href="#">MÁS</a></li>
+    </ul>
+  </nav>
+
+  <!-- Imagen principal con texto -->
   <div class="hero">
     <h1>Grupo Scout Nyeri 12</h1>
   </div>
 
+  <!-- Contenido estructurado -->
   <div class="content">
-    <p>Aquí empieza el contenido al hacer scroll. La imagen de arriba desaparece al bajar.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim.</p>
-    <p>Más contenido para hacer scroll...</p>
-    <p style="height: 1000px;"></p>
+    <h2>Bienvenido</h2>
+    <p>Gracias por visitar la web del Grupo Scout Nyeri 12. Aquí encontrarás toda la información sobre nosotros y nuestras actividades.</p>
+
+    <h2>Somos el grupo scout más antiguo de Aragón</h2>
+    <p>Fundado en Zaragoza, llevamos décadas educando en valores, compañerismo y aventura.</p>
+
+    <h2>Nuestro local</h2>
+    <p>Nos reunimos semanalmente en nuestro local del barrio para preparar actividades, excursiones y acampadas.</p>
+
+    <h2>T1</h2>
+    <p>Este es un texto temporal que puedes modificar para añadir información adicional.</p>
+
+    <h2>T1</h2>
+    <p>Otro bloque editable para añadir lo que necesites en cualquier momento.</p>
   </div>
-<head>
-  <!-- Barra de navegación -->
-<nav class="navbar">
-  <ul>
-    <li><a href="index.html">INICIO</a></li>
-    <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
-    <li><a href="secciones.html">SECCIONES</a></li>
-    <li><a href="noticias.html">NOTICIAS</a></li>
-    <li><a href="contacto.html">CONTACTO</a></li>
-    <li><a href="fotos.html">FOTOS</a></li>
-    <li><a href="#">MÁS</a></li>
-  </ul>
-</nav>
-
-<style> 
-.logo {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  z-index: 1000;
-}
-
-.logo img {
-  width: 50px;
-  transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-  transform: scale(1.2);
-}
-
-.navbar {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 12px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar li {
-  display: inline;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: #ffd700;
-}
-
-
-
-</style>
-
-</head>
-
-
 
 </body>
 </html>
